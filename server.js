@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/mvp', {
+mongoose.connect(process.env.DB_CONNECTION_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('MongoDB connected'))
