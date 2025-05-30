@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-const TO_EMAIL = 'abdurraihan898@gmail.com';
+const TO_EMAIL = 'shahriarc19@gmail.com';
 
 export const sendEmail = async (contact, feq) => {
   const transporter = nodemailer.createTransport({
