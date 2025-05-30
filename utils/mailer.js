@@ -32,6 +32,7 @@ export const sendEmail = async (contact, feq) => {
 
       <h3 style="color: #007BFF; border-bottom: 1px solid #ddd; margin-top: 30px; padding-bottom: 5px;">FEQ Details</h3>
       <table cellspacing="0" cellpadding="6" width="100%">
+         <tr><td><strong>Type OF Vehicale:</strong></td><td>${feq.Type_of_vehicle}</td></tr>
         <tr><td><strong>Interests:</strong></td><td>${feq.carInterests.join(', ')}</td></tr>
         <tr><td><strong>Budget:</strong></td><td>${feq.budget}</td></tr>
         <tr><td><strong>Lease or Buy:</strong></td><td>${feq.leaseOrBuy}</td></tr>
@@ -40,7 +41,7 @@ export const sendEmail = async (contact, feq) => {
         <tr><td><strong>Color Preference:</strong></td><td>${feq.colorPreference}</td></tr>
         <tr><td><strong>Buying For:</strong></td><td>${feq.buyingFor}</td></tr>
         <tr><td><strong>Passengers:</strong></td><td>${feq.passengers}</td></tr>
-        <tr><td><strong>Annual Mileage:</strong></td><td>${feq.annualMileage}</td></tr>
+        <tr><td><strong>hoping to accomplish today:</strong></td><td>${feq.hoping_to_accomplish_today}</td></tr>
       </table>
     </div>
 
